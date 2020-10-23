@@ -1,0 +1,12 @@
+﻿@using SuperSimpleBreadcrumbs.Models
+@using SuperSimpleBreadcrumbs.Controllers
+
+@{
+    ViewBag.Breadcrumbs = new List<Breadcrumb>()
+    {
+        new Breadcrumb("Home", nameof(HomeController.Index), "Home", true),
+        new Breadcrumb("Override Test", nameof(OverrideBreadcrumbExampleController.Index), "OverrideBreadcrumbExample", false)
+    };
+}
+
+
